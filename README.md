@@ -57,5 +57,5 @@ sudo docker compose up --build
 ou
 
 ```bash
-docker compose --env-file .port up --build
+docker compose --env-file project.config up --build
 ```
