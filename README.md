@@ -1,6 +1,6 @@
-
 ## Instalar Docker
 
+```bash
 sudo apt update
 sudo apt install ca-certificates curl gnupg
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -13,9 +13,11 @@ echo \
 
 sudo apt update
 sudo apt install docker-compose-plugin
+```
 
 ## docker-compose.yml
 
+```yaml
 version: '3.8'
 
 services:
@@ -25,9 +27,11 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+```
 
 ## Dockerfile
 
+```Dockerfile
 FROM node:18
 
 WORKDIR /app
@@ -42,8 +46,10 @@ RUN npm run build
 EXPOSE 3000
 
 CMD ["npm", "start"]
-
+```
 
 ## Build
 
+```bash
 sudo docker compose up --build
+```
