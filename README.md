@@ -53,3 +53,9 @@ CMD ["npm", "start"]
 ```bash
 sudo docker compose up --build
 ```
+
+ou
+
+```bash
+docker compose --env-file .port up --build
+```
